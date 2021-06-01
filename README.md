@@ -26,16 +26,16 @@ SSH from port from openvpn client to openvpn server must be opened (port 22), th
 
 ## Pre-requisites
 Required port to open client to server  : 22 (TCP)
-Required port to open client <=> server : 1194 (UDP) 
+Required port to open client <=> server : 1194 (UDP) <BR>
 NOTE: both local->cloud and cloud->local
 
 # How to Run
 ## Server must run first (in this case on-cloud)
-docker run -it --name openvpn --net host -v /opt/openvpn:/etc/openvpn --cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun openvpn server bramlocal
+docker run -it --name openvpn --net host -v /opt/openvpn:/etc/openvpn --cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun openvpn server bramlocal<BR>
 NOTE: press Ctrl+pq (to detach from docker container)
 
 ## Client can only be run when openvpn is already running
-docker run -it --name openvpn --net host -v /opt/openvpn:/etc/openvpn --cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun openvpn client bramdocker.westus.cloudapp.azure.com
+docker run -it --name openvpn --net host -v /opt/openvpn:/etc/openvpn --cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun openvpn client bramdocker.westus.cloudapp.azure.com<BR>
 NOTE: press Ctrl+pq (to detach from docker container)
 
 # How to Verify
