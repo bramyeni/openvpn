@@ -34,7 +34,7 @@ NOTE: both local->cloud and cloud->local
 docker run -it --name openvpn --net host -v /opt/openvpn:/etc/openvpn --cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun openvpn server bramlocal<BR>
 NOTE: press Ctrl+pq (to detach from docker container)
 
-## Client can only be run when openvpn is already running
+## Client can only be run when openvpn server is already running
 docker run -it --name openvpn --net host -v /opt/openvpn:/etc/openvpn --cap-add=NET_ADMIN --device /dev/net/tun:/dev/net/tun openvpn client bramdocker.westus.cloudapp.azure.com<BR>
 NOTE: press Ctrl+pq (to detach from docker container)
 
