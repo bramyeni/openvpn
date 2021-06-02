@@ -1,5 +1,5 @@
 # openvpn
-Create site to site VPN using openvpn
+Create a site to site VPN using openvpn
 
 # Create a docker image from this Dockerfile
 docker build --tag openvpn .
