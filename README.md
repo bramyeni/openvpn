@@ -2,7 +2,18 @@
 Create a site to site VPN using openvpn
 
 # Create a docker image from this Dockerfile
+## Pre-requisites
+docker must have been installed and configured and the docker daemon is running
+copy the Dockerfile which from this repo to let say /opt or /root or any of your linux mountpoint
+
+## Build docker image
+cd /opt
 docker build --tag openvpn .
+
+## Verify the docker image
+docker images
+
+NOTE: if the openvpn docker image is listed then, it is ready to run
 
 # Sample site to site VPN
 ## Assumptions
