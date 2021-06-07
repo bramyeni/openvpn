@@ -16,6 +16,7 @@ docker images<BR><BR>
 NOTE: if the openvpn docker image is listed then, it is ready to run
 
 # Sample site to site VPN
+<pre>
 ## Assumptions
 openvpn server          : on cloud<BR>
 openvpn client          : local server<BR>
@@ -34,6 +35,7 @@ openvpn encryption      : TLS 1.3<BR>
 openvpn certificate     : self-signed 2048 bits<BR>
 
 SSH from port from openvpn client to openvpn server must be opened (port 22), this is required to perform automatic registration and installation of a self-signed certificate<BR>
+</pre>
 
 ## Pre-requisites
 Required port to open client to server  : 22 (TCP)<BR>
