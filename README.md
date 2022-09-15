@@ -1,8 +1,8 @@
 # openvpn
 Create a site to site VPN using openvpn
 
-# Script
-script can be found here https://github.com/bramyeni/bramscripts/blob/main/microsoft/setup-k8sfull.sh
+# Docker File
+Dockerfile can be found in https://github.com/bramyeni/bramscripts/blob/main/microsoft/openvpn/Dockerfile-openvpn
 
 # Create a docker image from this Dockerfile
 ## Pre-requisites
